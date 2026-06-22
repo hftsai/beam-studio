@@ -205,8 +205,8 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/js/lib/svg-nest'),
         },
         {
-          from: path.resolve(__dirname, 'public/js/lib/dxf2svg.js'),
-          to: path.resolve(__dirname, 'dist'),
+          from: path.resolve(core, 'public/js/lib/dxf2svg.js'),
+          to: path.resolve(__dirname, 'dist/dxf2svg.js'),
         },
         { from: path.resolve(__dirname, 'src/vendor'), to: path.resolve(__dirname, 'dist/vendor') },
         { from: path.resolve(__dirname, 'src/manifest.json'), to: path.resolve(__dirname, 'dist') },
@@ -244,6 +244,7 @@ module.exports = {
       buffer: false,
       events: false,
       fs: false,
+      path: false,
       stream: false,
       util: false,
     },
